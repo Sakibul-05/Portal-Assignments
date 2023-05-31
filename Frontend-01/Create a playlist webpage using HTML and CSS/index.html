@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+    <style>
+      body {
+        background-color: #cccccc;
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .player_one {
+        /* border: 1px solid grey; */
+        outline: 2px solid grey;
+        border-radius: 5px;
+        background-color: #ffff;
+        padding: 0.2rem 0 0.2rem 0;
+        margin: 0 0.5rem;
+      }
+      .player_one ul {
+        list-style: none;
+        padding-left: 0.5rem;
+      }
+      .player_one ul li {
+        margin: 0.2rem 0 0 0;
+      }
+      .player_one ul li a {
+        text-decoration: none;
+      }
+      h4 {
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+      .player_two {
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 450px;
+        padding: 10px;
+        height: auto;
+        outline: 2px solid grey;
+      }
+      video {
+        width: 100%;
+        height: auto;
+      }
+      h5 {
+        margin-top: 0.1rem;
+        text-align: center;
+      }
+      audio{
+        width: 100%;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Playlist</h1>
+    <div class="player_one">
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank"
+            >Song 1</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank"
+            >Song 2</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank"
+            >Song 3</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank"
+            >Song 4</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank"
+            >Song 5</a
+          >
+        </li>
+      </ul>
+    </div>
+    <h4>Now Playing...</h4>
+    <div class="player_two">
+      <div class="video">
+        <video width="200" controls>
+          <source
+            src="https://www.w3schools.com/tags/movie.mp4"
+            type="video/mp4"
+          />
+           
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <h5>MP3 songs</h5>
+      <div class="audio">
+        <p>Maan Meri Jaan</p>
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>

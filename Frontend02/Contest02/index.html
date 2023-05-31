@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <p>Filter ui cards via their profession</p>
+            <div class="select">
+                <select name="" id="selectTag">
+                    <option value="profession">Profession</option>
+                    <option value="developer">Developer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <div  id="showResult">
+                <div class="result-section" id="container">
+                    <div class="number">1</div>
+                    <div class="name">Name: <span>John</span></div>
+                    <div class="profession">Profession: <span>Developer</span></div>
+                    <div class="age">Age: <span>18</span></div>
+                </div>
+            </div>
+            <div class="filter">
+                <button id="filterBtn" onclick="filterFunction()">Filter</button>
+            </div>
+
+            <p class="addUserText">Add a new user</p>
+            <div class="inputSections">
+                <div>
+                    <label for="userName">Enter Name</label>
+                    <input type="text" name="user-name" id="userName">
+                </div>
+                <div><label for="userProfession">Enter Profession</label>
+                    <input type="text" name="user-profession" id="userProfession">
+                </div>
+                <div>
+                    <label for="userAge">Enter Age</label>
+                    <input type="number" name="user-age" id="userAge">
+                </div>
+            </div>
+            <div class="addUserBtn">
+                <button id="addUserBtn" onclick="addUserFunction()">Add User</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

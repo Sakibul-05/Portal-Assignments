@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.container{
+    border: 2px solid blue;
+    padding: 3vw;
+    max-width: 70vw;
+}
+ 
+.container .main .select{
+    border: 1px solid white;
+    width: fit-content;
+    /* padding: 10px; */
+    padding-right: 10px;
+    margin-bottom: 3vw;
+}
+.container .main .select select{
+     border: none;
+    padding: 10px;
+}
+.container .main .result-section{
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    width: fit-content;
+    gap: 15px;
+    padding: 1vw;
+    margin-bottom: 10px;
+}
+.filter button{
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+div.main p.addUserText{
+    margin: 5vw 0 2vw 0;
+}
+
+div.inputSections{
+    display: flex;
+    justify-content: space-between;
+}
+div.inputSections div{
+    width: 30%;
+}
+div.inputSections label{
+    display: block;
+    margin-bottom: 8px;
+}
+div.inputSections div input{
+     border: 1px solid white;
+     width: 100%;
+     height: 30px;
+     border-radius: 5px;
+}
+div.inputSections div input:focus{
+    outline: 2px solid white;
+}
+.addUserBtn button{
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 756px) {
+    div.inputSections{
+        display: block;
+        
+    }
+    div.inputSections div{
+        width: 100%;
+        margin-top: 15px;
+    }
+    div.inputSections div input{
+        border: 1px solid white;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+   }
+}

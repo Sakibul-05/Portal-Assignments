@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="../Avengers.jpg" type="image/x-icon">
+    <style>
+        div{
+            display: inline-block;
+        }
+        .box-1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+        .box-2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid green;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        .box-3{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: mediumspringgreen;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Basic</h1>
+    <div class="box-1">
+    
+    </div>
+    <div class="box-2">
+    
+    </div>
+    <input type="text" name="text" id="text">
+    <input type="file" name="fileUpload" id="fileUpload">
+    <div class="box-3"></div>
+
+    <input id="name" type="text" placeholder="enter your name" />
+    <button id="btn" type="submit" onClick="handleClick()">click</button>
+    <br />
+    <div id="data"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, doloremque autem aliquam recusandae deleniti quisquam beatae dolore dolorem voluptatibus. Laborum at consequuntur, officia autem atque optio nemo ut perspiciatis? Sapiente, in! Mollitia sunt, deserunt laboriosam, alias repellendus consequatur nulla officiis architecto velit, fuga tempore. Placeat, voluptatem laboriosam. Et, sint consectetur distinctio ipsum sunt in rerum harum enim fugit commodi omnis earum molestias pariatur totam laudantium debitis aperiam tempora.</p>
+
+    <div id="pattern"></div>
+
+
+    <div class="form">
+        <p>Please rate the service:</p>
+    <p>
+        <label for="very-poor">
+            <input class="user" type="radio" name="rate" value="Very poor" id="very-poor"> Very poor
+        </label>
+        <label for="poor">
+            <input class="user" type="radio" name="rate" value="Poor" id="poor"> Poor
+        </label>
+        <label for="ok">
+            <input class="user" type="radio" name="rate" value="OK" id="ok"> OK
+        </label>
+        <label for="good">
+            <input class="user" type="radio" name="rate" value="Good"> Good
+        </label>
+        <label for="very-good">
+            <input class="user" type="radio" name="rate" value="Very Good" id="very-good"> Very Good
+        </label>
+    </p>
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+    <p id="output"></p
+    </div>
+
+     <script src="./JS Files/script.js"></script>
+     <script>
+        function handleClick() {
+        if (typeof Storage !== "undefined") {
+          let name = document.getElementById("name").value;
+          localStorage.setItem("name", name);
+  
+          document.getElementById("data").innerHTML =
+            "Welcome To GeeksforGeeks" + " " + localStorage.getItem("name");
+        } else {
+          alert("Sorry! your browser doesn't support Web Storage");
+        }
+      }
+
+
+
+      //============== script for div.form =====================
+      const btnRate = document.getElementById("btnRate");
+      const output = document.getElementById("output");
+      btnRate.addEventListener("click",()=>{
+            let rates = document.getElementsByName("rate");
+            rates.forEach((rate)=>{
+                if(rate.checked){
+                    output.innerText = `You select: ${rate.value}`;
+                }
+            })
+        })
+
+     </script>
+     <!-- <script src="./JS Files/callback.js"></script> -->
+     <!-- <script src="./JS Files/objects.js"></script> -->
+     <script src="./JS Files/arrays.js"></script>
+     <!-- <script src="./JS Files/function.js"></script> -->
+     <!-- <script src="./JS Files/this.js"></script> -->
+     <script src="./JS Files/DOM.js"></script>
+</body>
+</html>

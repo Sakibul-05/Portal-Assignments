@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 228, 228);
+    font-family: Verdana, sans-serif;
+}
+.profile_card{
+    /* border: 1px solid red; */
+    background-color: white; 
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 55px;
+    /* flex-wrap: wrap; */
+     
+}
+.left_section{
+    /* border: 1px solid red; */
+    padding: 20px 5px 0 2px;
+}
+ 
+.left_section section:nth-child(1){
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 60px 10px 10px;
+}
+.left_section section:nth-child(1) .name-profile-email h3{
+    display: flex ;
+}
+.left_section section:nth-child(1) .name-profile-email span{
+    font-weight: 300;
+     
+}
+
+.react-css-js-written, .nodejs-mongodb-written, .c-python-batch-written, .aws-hadoop-written{
+    margin-top: 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+progress{
+    width: 600px;
+}
+
+
+
+.right_section{
+    padding: 35px 10px 0 2px;
+}
+.right_section .about-me h1{
+    margin-bottom: 7px;
+}
+.right_section .about-me .hr{
+    
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: rgb(1, 17, 198);
+     
+}
+.right_section .about-me p{
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 900px) {
+    .profile_card{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .right_section{
+        
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .react-css-js{
+        width: 100%;
+    }
+    progress{
+        width: 100%;
+    }
+    .left_section section:nth-child(1) {
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0;
+    
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .left_section section:nth-child(1){
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15vh;
+    }
+}

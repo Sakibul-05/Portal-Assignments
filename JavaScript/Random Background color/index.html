@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Background Color</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #shadow2 {
+        color: white;
+        -webkit-text-stroke: 1px #f8f8f8;
+        text-shadow: 0px 2px 4px blue;
+        text-align: center;
+      }
+      p#showRgbValue{
+        /* border: 2px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        height: 25px;
+        background-color: #fff;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+      }
+      #btn{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 18px;
+        font-weight: 600;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="shadow2">Click the button and see the changes</h1>
+      <p id="showRgbValue"></p>
+      <div class="btn">
+        <button id="btn" onclick="changeBackground()">Click Me</button>
+      </div>
+    </div>
+
+    <script>
+      const button = document.getElementById("btn");
+      function randomRgbColor() {
+        let red = parseInt(Math.random() * 256);
+        let green = parseInt(Math.random() * 256);
+        let blue = parseInt(Math.random() * 256);
+        return `rgb(${red},${green},${blue})`;
+      }
+      console.log(randomRgbColor());
+      function changeBackground() {
+        let rgb = randomRgbColor();
+        document.body.style.backgroundColor = rgb;
+        let showRgbValue = document.getElementById("showRgbValue");
+        showRgbValue.innerText = rgb;
+        showRgbValue.style.fontWeight = "bold";
+         
+         
+      }
+    </script>
+  </body>
+</html>

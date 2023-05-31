@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #animal-photos{
+            /* border: 2px solid black; */
+            max-width: 756px;
+            margin: auto;
+            background-color: rgb(91, 88, 88);
+            border-radius: 18px;
+        }
+        #animal-photos .heading{
+            text-align: center;
+            color: white;
+             
+        }
+        #animal-photos .heading #photo-heading{
+            /* border: 2px solid red; */
+            font-size: 2.5vw;
+            padding-top: 2vw;
+            font-weight: 500;
+			text-transform: uppercase;
+        }
+        #animal-photos .photo-grid{
+            display: grid;
+            object-fit: cover;
+            gap: 1vw; 
+            grid-template-columns: repeat(3,auto);
+            padding: 1vw 2vw;
+           
+        }
+        #animal-photos .photo-grid div{
+            /* border: 2px solid red; */
+            border-radius: 18px; 
+            overflow: hidden;
+            max-width: 100%;
+             
+        }
+        #animal-photos .photo-grid div img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="animal-photos">
+        <div class="heading">
+            <h1 id="photo-heading">Animal Photos</h1>
+        </div>
+        <div class="photo-grid">
+            <div class="camel-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/camel.jpg" alt="camel-image">
+            </div>
+            <div class="cheetah-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/cheetah.jpg" alt="cheetah-image">
+            </div>
+            <div class="elephant-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/elephant.jpg" alt="elephant-image">
+            </div>
+            <div class="gorilla-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/gorilla.jpg" alt="gorilla-image">
+            </div>
+            <div class="koala-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/koala.jpg" alt="koala-image">
+            </div>
+            <div class="lion-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/lion.jpg" alt="lion-image">
+            </div>
+            <div class="polar_bear-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/polar_bear.jpg" alt="polar_bear-image">
+            </div>
+            <div class="tiger-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/tiger.jpg" alt="tiger-image">
+            </div>
+            <div class="wolf-img">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/wolf.jpg" alt="wolf-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

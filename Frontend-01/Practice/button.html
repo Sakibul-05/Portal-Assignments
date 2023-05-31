@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f4a661b4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      button {
+        display: inline-block;
+        width: 90px;
+        border: none;
+        padding: 10px;
+        background-image: linear-gradient(to right, rgb(253, 192, 192), red);
+        color: white;
+        transition: width 1s;
+      }
+      i.fa-arrow-right {
+        display: none;
+      }
+      button:hover i.fa-arrow-right {
+        display: inline-block;
+      }
+      button:hover {
+        width: 120px;
+      }
+
+      .div1{
+        /* border: 2px solid rgb(0, 0, 0); */
+        display: inline-block;
+        width: 200px;
+        margin: auto;
+      }
+      .div1::before{
+        content: '.';
+        display: inline-block;
+        width: 20px;
+        height: 100px;
+        background: linear-gradient(to right, rgb(255, 193, 193), red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <button>Click Me <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <div class="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus asperiores odio illum soluta enim quo pariatur, nisi numquam eligendi aliquid?
+    </div>
+  </body>
+</html>

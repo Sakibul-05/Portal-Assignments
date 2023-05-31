@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+    
+    <!-- ******** stylesheet ********* -->
+    <style>
+         
+        .dropdown{
+            /* border: 2px solid red; */
+            width: fit-content;
+            margin: auto;
+            position: relative;
+             
+        }
+        .btn{
+            padding: 12px 24px;
+            border: none;
+            background-color: #4CAF50;
+        }
+        .list_items{
+            position: absolute;
+            width: 105px;
+            text-align: center;
+            display: none;
+        }
+        .list_items a{
+            /* border: 1px solid green; */
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            
+        }
+        .btn:hover{
+            background-color: #3e8e41;
+            cursor: pointer;
+        }
+        .dropdown:hover .list_items{
+            display: block;
+            
+        }
+        .list_items a:hover{
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="btn">Dropdown</button>
+        <div class="list_items">
+            <a href="#">Item-1</a>
+            <a href="#">Item-2</a>
+            <a href="#">Item-3</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="data:image/jpeg;base64,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"
+            width="30"
+            height="24"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Bootcamps
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Popular Bootcamps</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bootcamp Developers</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bootcamp Financing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Bootcamp Grads and Alumni</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Coding
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Coding tools</a></li>
+                <li><a class="dropdown-item" href="#">Git</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">HTML</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">JS</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">PYTHON</a></li>
+                <li><a class="dropdown-item" href="#">Ruby</a></li>
+                <li><a class="dropdown-item" href="#">C++</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Career Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Career Advice</a></li>
+                <li><a class="dropdown-item" href="#">Interviews</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Tech Cities</a></li>
+                <li><a class="dropdown-item" href="#">Tech Salaries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tech Fields
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Software Engineering</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Data Science</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News & Commentary</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

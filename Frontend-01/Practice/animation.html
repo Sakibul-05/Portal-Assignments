@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            max-width: 500px;
+            margin: auto;
+            height: 10vh;
+            /* text-overflow: ellipsis; */
+            padding: 10px;
+            overflow: hidden;
+             
+           
+        }
+        .box{
+            white-space: nowrap;
+            position: relative;
+        }
+        .box h2{
+            position: absolute;
+            animation: movingLeft 40s linear infinite forwards  ;
+            left: 110%;
+        }
+        @keyframes movingLeft{
+            from{
+                left: 110%;
+            }
+            to{
+                left: -510%;
+                /* right: 100%; */
+                 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim eligendi nemo ut alias adipisci dignissimos, magnam aperiam neque exercitationem non praesentium nulla cupiditate perspiciatis accusamus rerum assumenda ipsa illo!</h2>
+        </div>
+    </div>
+</body>
+</html>

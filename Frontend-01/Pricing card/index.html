@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.price_card{
+            /* border: 1px solid red; */
+            background-color: rgb(236, 237, 239);
+            width: 300px;
+            height: auto;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        div.image_section img{
+             display: block;
+             /* border: 1px solid red; */
+        }
+        div.image_section{
+             display: flex;
+             justify-content: center;
+             padding-top: 35px;
+        }
+
+        .details_section{
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 30px;
+        }
+        .heading{
+            font-size: 38px;
+            font-weight: bolder;
+        }
+        .price, .description{
+            font-size: 21px;
+            font-weight: 600;
+            /* border: 1px solid red; */
+        }
+        .description{
+            text-align: center;
+            padding: 4px 10px;
+        }
+
+        .button_section{
+            text-align: center;
+            padding: 10px 5px;
+        }
+        .button_section button{
+            padding: 13px 9px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(255, 49, 83);
+            border: none;
+            color: white;
+        }
+        .button_section button:hover{
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="price_card">
+        <div class="image_section">
+            <img src="https://wallpaperaccess.com/full/4790884.jpg" width="220px" height="130px" alt="heart_tree_image">
+        </div>
+        <div class="details_section">
+            <div class="heading">
+                Pricing Card
+            </div>
+            <div class="price">
+                Price: Rs.200
+            </div>
+            <div class="description">
+                Description: Lorem ipsum dolar sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+        <div class="button_section">
+            <a href="#"><button>Buy Now</button></a>
+        </div>
+    </div>
+</body>
+</html>
