@@ -24,9 +24,14 @@
     </form>
 
     <script>
+        const name = document.getElementById("name");
         let btn = document.getElementById("btn");
         btn.addEventListener("click", showAlertBox =>{
-            alert("Congratulations")
+             if(name.value ===""){
+                alert("All fields are required!");
+             }else{
+                alert("Congratulations");
+             }
         })
     </script>
 </body>

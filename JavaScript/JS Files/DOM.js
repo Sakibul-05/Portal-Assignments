@@ -47,16 +47,18 @@ btn.addEventListener("click", ()=>{
 // console.log(input[0].id); //very-poor
 
 
-// const ul = document.createElement("ul");
-// const li1 = document.createElement("li");
-// const li2 = document.createElement("li");
-// const li3 = document.createElement("li");
-// li1.innerText = "Home";
-// li2.innerText = "About";
-// li3.innerText = "Contact Us";
-// li1.style.backgroundColor = "red";
-// li3.style.backgroundColor = "lightgreen"
-// ul.appendChild(li1);
-// ul.appendChild(li2);
-// ul.appendChild(li3);
+const ul = document.createElement("ul");
+const li1 = document.createElement("li");
+const li2 = document.createElement("li");
+const li3 = document.createElement("li");
+li1.innerText = "Home";
+li2.innerText = "About";
+li3.innerText = "Contact Us";
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+li1.style.backgroundColor = "red";
+li3.style.backgroundColor = "lightgreen"
 // document.body.appendChild(ul);
+
+
